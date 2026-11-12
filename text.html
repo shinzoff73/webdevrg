@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <style>
+        body {
+    background-color: black;
+    transition: background-color 0.5s ease;
+}
+
+    </style>
+</head>
+<body>
+    <button id="colorButton">Press and Hold</button>
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('colorButton');
+    let timer;
+
+    button.addEventListener('mousedown', function() {
+        timer = setTimeout(function() {
+            document.body.style.backgroundColor = 'green';
+        }, 1000); // 1000 milliseconds = 1 second
+    });
+
+    button.addEventListener('mouseup', function() {
+        clearTimeout(timer);
+    });
+
+    button.addEventListener('mouseleave', function() {
+        clearTimeout(timer);
+    });
+});
+
+   </script>
+</body>
+</html>

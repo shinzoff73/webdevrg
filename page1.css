@@ -1,0 +1,134 @@
+.page1 {
+    height: 99vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+
+}
+
+.box{
+    height: 99vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+.page1 .container {
+    position: absolute;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+    z-index: 20;
+}
+
+/* .page1 .container:hover {
+    opacity: 0;
+} */
+
+.page1 .container .line {
+   
+    color: white;
+    text-align: center;
+    font-size: 6.8rem;
+    line-height: .8;
+    color: rgb(182, 182, 182);
+    font-weight: 600;
+    
+    
+}
+
+.container h2 {
+    color: rgb(182, 182, 182);
+    font-weight: 350;
+   
+}
+
+.page1 .container2{
+     height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+    opacity: 0;
+}
+
+/* .page1 .container2:hover{
+    opacity: 1; */
+
+
+.page1 .container2 .line {
+   mix-blend-mode: difference;
+    color: #00cf4f;
+    text-align: center;
+    font-size: 6.8rem;
+    line-height: .8;
+    
+    font-weight: 600;
+    
+}
+
+.container2 h2 {
+    mix-blend-mode: difference;
+    font-weight: 350;
+   
+}
+
+
+@media screen and (max-width: 700px) {
+    .divisions ul li a{
+      font-size: 13px;
+    }
+  
+    .page1 .container .line {
+       
+      font-size: 5rem;
+  }
+
+    .page1 .container2 .line {
+      font-size: 5rem;
+  }
+ .container{
+    opacity: 1;
+ }
+
+ 
+  }
+/* 
+  @media screen and (min-width: 1800px) {
+    
+.container h2:hover{
+    opacity: 0;
+}
+
+.page1 .container #di1:hover{
+    opacity: 0;
+   
+}
+.page1 .container #di2:hover{
+    opacity: 0;
+   
+}
+.page1 .container #di3:hover{
+    opacity: 0;
+  
+}
+.page1 .container #di4:hover{
+    opacity: 0;
+   
+}
+.page1 .container #di5:hover{
+    opacity: 0;
+   
+}
+  } */

@@ -1,0 +1,20 @@
+
+
+#status {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(156, 156, 156);
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+   z-index: 100;
+    user-select: none;
+    /* Disable text selection */
+    cursor: default;
+    /* Hide cursor */
+}
+
